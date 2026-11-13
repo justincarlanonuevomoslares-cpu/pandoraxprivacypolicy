@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7fb">
+  <meta name="description" content="Privacy Policy for PandoraX Auto Touch, including its local automation data, Android permissions, screenshots, and data sharing.">
+  <title>Privacy Policy — PandoraX Auto Touch</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #596579;
+      --accent: #5146e5;
+      --line: #e4e8f0;
+      --surface: #fff;
+      --background: #f6f7fb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    header {
+      padding: 3.5rem 1.25rem 2.5rem;
+      background: radial-gradient(ellipse at top right, #e9e7ff, transparent 55%), var(--background);
+    }
+
+    .wrap {
+      width: min(100% - 2rem, 800px);
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      margin: 0 0 .5rem;
+      color: var(--accent);
+      font-size: .8rem;
+      font-weight: 750;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 650px;
+      margin: 0;
+      font-size: clamp(2.25rem, 7vw, 3.5rem);
+      letter-spacing: -.045em;
+      line-height: 1.1;
+    }
+
+    .updated {
+      margin: 1rem 0 0;
+      color: var(--muted);
+    }
+
+    main {
+      margin: 0 auto 4rem;
+      padding: 2rem clamp(1.25rem, 5vw, 3rem);
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      background: var(--surface);
+      box-shadow: 0 18px 50px rgb(23 32 51 / 6%);
+    }
+
+    h2 {
+      margin: 2rem 0 .5rem;
+      font-size: 1.25rem;
+      letter-spacing: -.015em;
+      line-height: 1.35;
+    }
+
+    h2:first-child { margin-top: 0; }
+    p { margin: .65rem 0; }
+    ul { padding-left: 1.35rem; }
+    li { padding-left: .2rem; margin: .35rem 0; }
+    a { color: #3930b8; text-underline-offset: .18em; }
+    a:focus-visible { outline: 3px solid #8e87ff; outline-offset: 3px; }
+
+    .notice {
+      margin: 1.25rem 0;
+      padding: 1rem 1.1rem;
+      border-left: 4px solid var(--accent);
+      border-radius: .25rem .6rem .6rem .25rem;
+      background: #f3f2ff;
+    }
+
+    footer {
+      padding: 0 1rem 2.5rem;
+      color: var(--muted);
+      font-size: .9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 520px) {
+      header { padding-top: 2.5rem; }
+      main { padding-block: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">PandoraX</p>
+      <h1>Privacy Policy</h1>
+      <p class="updated">For PandoraX Auto Touch<br>Effective date: November 13, 2026</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h2>About this policy</h2>
+    <p>This policy explains how PandoraX Auto Touch (“the app”), provided by PandoraX, handles information when you use it. The app lets you configure tap points and swipe gestures for other apps and run them from an on-screen floating control.</p>
+
+    <h2>Information the app stores and uses</h2>
+    <p>The app stores the following information on your device so you can create and run automation profiles:</p>
+    <ul>
+      <li>Profile names and selected app package identifiers.</li>
+      <li>Configured tap locations and timing, and saved swipe paths.</li>
+      <li>Floating-control positions and app preferences.</li>
+    </ul>
+    <p>This information is stored in the app’s local database or preferences. While automation is running, the app uses the configured information to perform the gestures you requested. During setup, the location you tap is captured so the app can save that point to your profile.</p>
+
+    <h2>Permissions and device features</h2>
+    <ul>
+      <li><strong>Accessibility service:</strong> The service observes foreground app or window changes to decide when to show or hide the floating control, and performs the taps and swipes you configure. It does not retrieve the content of other apps’ windows. Although the service declares gesture and screenshot capabilities, screenshot capture is only initiated by the specific action described below.</li>
+      <li><strong>Display over other apps:</strong> This permission displays the floating control over other apps.</li>
+      <li><strong>Installed-app selection:</strong> The app queries Android for launchable apps so you can choose an automation target. App identifiers are used on your device for this feature.</li>
+      <li><strong>Screenshot action:</strong> On Android 11 and later, triple-tapping the Social floating control captures a screenshot and saves it in the Pictures/PandoraX folder on your device. This is an explicit action; screenshots are not continuously or automatically captured by the app.</li>
+    </ul>
+    <p>You can revoke Accessibility and display-over-other-apps access in your Android settings. If you revoke a permission, the related app feature may not work.</p>
+
+    <h2>Information the app does not collect or transmit</h2>
+    <p>The app does not continuously record your clicks or inspect other apps’ screen content. Its current implementation does not have an account system, an app-operated server, or an internet permission. The app does not send the profile information, gestures, screenshots, or diagnostic logs to PandoraX. It does not include advertising, analytics, crash-reporting, or cloud-service SDKs.</p>
+    <p>Android’s system diagnostic logs may contain operational details, including tap coordinates. The app does not upload those logs. Android or your device manufacturer may handle system logs according to their own settings and policies.</p>
+
+    <h2>How information may be shared</h2>
+    <p>PandoraX does not sell or disclose the locally stored app information to third parties. Some information is used by other software as part of the feature you choose to use:</p>
+    <ul>
+      <li>The selected app receives the taps or swipes that the Accessibility service performs in it.</li>
+      <li>Android mediates Accessibility events, overlay permissions, and screenshot capture.</li>
+      <li>If Android device backup is enabled, Android and the backup provider you have configured may transfer eligible app data as part of your device backup. This is controlled by Android and your backup settings, not by an app-operated PandoraX service.</li>
+    </ul>
+
+    <h2>Retention and deletion</h2>
+    <p>Profiles and preferences remain in the app’s local storage until you remove them, clear the app’s storage, or uninstall the app. Screenshots saved in Pictures/PandoraX are separate device files; remove them using your device’s photo or file-management app. Android system logs and device backups are managed by Android or your device and backup provider.</p>
+
+    <h2>Children’s privacy</h2>
+    <p>The app is not designed to collect personal information from children. It does not transmit information to PandoraX. If you have a concern about information stored on a child’s device, contact us using the details below.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If the app’s information practices change, this policy will be updated to describe those changes. The effective date at the top indicates when this version took effect.</p>
+
+    <h2>Contact</h2>
+    <p>For questions or privacy requests, contact PandoraX at <a href="mailto:justin.carl.anonuevo.moslares@gmail.com">justin.carl.anonuevo.moslares@gmail.com</a>.</p>
+  </main>
+
+  <footer>
+    <div class="wrap">PandoraX Auto Touch · Privacy Policy</div>
+  </footer>
+</body>
+</html>
